@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    
+        textarea{
+            display: block;
+            height: 50vh;
+            width: 100%;
+            font-size: 24px;
+        }
+        button{
+            width: 100%;
+            font-size: 32px;
+            background-color: aquamarine;
+            color: blue;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>блокнот</h1>
+    <form action="/save" method="post">
+        <textarea name="content">{{content}}</textarea>
+        <button>Сохранить</button>
+    </form>
+</body>
+</html>
